@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Plugins com Jquery</title>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />        
+    </head>
+
+    <body>
+        <h1>Plugins flex-slider para Galerias</h1>
+
+        <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                        <img src="imagens/angular.png" />
+                        <p class="flex-caption">Curso de Angular</p>
+                        </li>
+                        <li>
+                        <img src="imagens/node.png" />
+                        <p class="flex-caption">Curso de Node</p>
+                        </li>
+                        <li>
+                        <img src="imagens/bootstrap.png" />
+                        <p class="flex-caption">Curso de Bootstrap</p>                        
+                        </li>
+                        <li>
+                        <img src="imagens/jquery.png" />
+                        <p class="flex-caption">Curso de Jquery</p>                        
+                        </li>
+                </ul>
+        </div>
+          <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+         <!-- FlexSlider -->
+        <script defer src="js/jquery.flexslider.js"></script>
+
+        <!-- script flexslider -->
+        <script>
+            $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+            });
+        </script>
+    </body>
+
+</html>
